@@ -7,7 +7,7 @@ export const metadata = {
   title: 'PRODUCT PAGE',
 };
 
-// ✅ دا المهم
+
 export async function generateStaticParams() {
   return featuredProducts.map(product => ({
     id: product.id.toString(),
