@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata = {
+  title: 'CART PAGE',
+};
 export default function CartPage() {
   return (
     <div className='h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex flex-col text-red-500 lg:flex-row '>

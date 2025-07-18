@@ -2,6 +2,9 @@ import { menu } from '@/data'
 import Link from 'next/link'
 import React from 'react'
 
+export const metadata = {
+    title: 'MENU PAGE',
+};
 export default function MenuPage() {
   return (
     <div className='p-4 lg:px-20 xl:px-40 h-[calc(100vh-5rem)] md:h-[calc(100vh-9rem)] flex flex-col md:flex-row items-center'>

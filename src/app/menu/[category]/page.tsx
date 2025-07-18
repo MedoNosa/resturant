@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+export const metadata = {
+    title: 'CATEGORY PAGE',
+};
 export default function CategoryPage() {
   return (
     <div className='flex flex-wrap text-red-500 '>
