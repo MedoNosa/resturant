@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 
@@ -39,7 +40,9 @@ export default function Slider() {
        <h1 className='text-5xl text-center uppercase p-4 md:p-10 md:text-6xl xl:text-7xl '>
         {data[currentSlide].title}
        </h1>
-       <button className=' bg-red-500 text-white py-4 px-8 border-none rounded-b-md cursor-pointer'>Order Now</button>
+       <Link href="/menu">
+              <button className=' bg-red-500 text-white py-4 px-8 border-none rounded-b-md cursor-pointer'>Order Now</button>
+       </Link>
       </div>
        {/* Image Container */}
       <div className='w-full h-1/2 relative lg:h-full lg:w-1/2'>

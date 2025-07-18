@@ -1,5 +1,6 @@
 import { featuredProducts } from '@/data'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Featured() {
@@ -23,7 +24,9 @@ export default function Featured() {
           <h1 className='text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl '>{item.title}</h1>
           <p style={{textAlign:"center"}} className='p-4 2xl:p-8'>{item.desc}</p>
           <span className='text-xl font-bold'>${item.price}</span>
-          <button className='bg-red-500 text-white p-2 rounded-b-md'>Add To Cart</button>
+          <Link href={`/product/${item.id}`} >
+                    <button className='bg-red-500 text-white p-2 rounded-b-md cursor-pointer'>Add To Cart</button>
+          </Link>
         </div>
       </div> ))}
      </div>
